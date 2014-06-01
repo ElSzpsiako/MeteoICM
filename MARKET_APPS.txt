@@ -1,13 +1,14 @@
 Search: Meteo ICM
 
 1. Meteo.pl alternative
+   v. 0.8.7 Beta
    [STREK SOLUTIONS]
    100 000+ downloads
-   v. 0.8.7 Beta
    Aug 18, 2011
    638 g+
    Size: 176kB
    
+   1516 comments
    5 stars 1063
    4 stars 246
    3 stars 84
@@ -42,5 +43,54 @@ Search: Meteo ICM
    * View (Plain / + Legend)
    * About (Changelog / quick share(qr code) / homepage(blog tego programisty))
    * Setting (Force language / show location names (nazwa miasta na górze))
+
+   
+   
+--------------------------------------------------------
+3. ICM Meteo
+   v. 1.0
+   [IVTECH.PL]
+   10 000+ downloads
+   Apr 10, 2013
+   194 g+
+   Size: 694kB
+   
+   
+   165 comments
+   5 stars 105
+   4 stars 33
+   3 stars 12
+   2 stars 2
+   1 star 13
+   
+   Permissions: 
+   Default:
+    -Read Google service configuration
+   Storage:
+    -Modify/delete SD card contents
+   Network communication:
+    -Full Internet access
+    -View network state
+   Your location:
+    -Coarse (network-based) location, fine (GPS) location
+   
+   
+   Flow: 
+   1. przy pierwszym uruchomieniu 
+      (Brak ulubionych, 
+       wybierz miasto (miasta wojewódzkie oraz wybrane miasta europejskie,
+       pokaż mapę (wskaż miejsce na mapie),
+       komentarz synoptyka)
+       
+   Uwagi:
+   * Na moim ekranie meteogramy są w jakimś małym okienku - nic nie widać
+   * U mnie jest tylko vertical, u Marcina tylko horizontal !!! ??? :/
+   
+       
+   Opcje:
+   * Meteogramy są przycięte - to jest fajne
+   * Wskaż miejsce na mapie (komunikat na początku: przytrzymaj dłużej palcem miejsce, które cię interesuje)
+   * Temperatura / Opad / Ciśnienie / ? / ?
+   * W oknie meteogramów jest wybór UM / COAMPS / dodaj do ulubionych
    
    
