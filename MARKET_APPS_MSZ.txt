@@ -1,0 +1,46 @@
+Search: Meteo ICM
+
+1. Meteo.pl alternative
+   [STREK SOLUTIONS]
+   100 000+ downloads
+   v. 0.8.7 Beta
+   Aug 18, 2011
+   638 g+
+   Size: 176kB
+   
+   5 stars 1063
+   4 stars 246
+   3 stars 84
+   2 stars 36
+   1 star  87
+   
+
+   Permissions: 
+   Network communication:
+    -Full Internet access
+    -View network state
+    
+    
+   Flow:
+   1.przy pierwszym uruchomieniu napis:
+   - no location selected .... select location
+   2. dodajesz do "ulubionych" za pomocą zaznaczania gwiazdki - to jest niezrozumiałe
+       (są dwie Warszawy: Warszawa i Warszawa pow. Warszawski)
+   3. wtedy pojawia się meteogram
+   
+   Uwagi:   
+   * Wchodzę do settings i wracam do okna głównego i wtedy pojawił się biały ekran, dopiero po chwili meteogram...
+     (wygląda na to, że po każdym powrocie jest "downloading")
+   * W prawym i dolnym boku są jakieś gówniane marginesy na pół ekranu
+    (prawy znika jeśli zrobi się + legend, czyli prognoza z legendą)
+   * About / quick share (qr code) - chyba mi się zawiesił       
+       
+   Opcje:
+   * Refresh
+   * Location (Gwiazdki -> do ulubionych) (+ quick filter z klawiatury)
+   * Favourites (ulubione miasta)
+   * View (Plain / + Legend)
+   * About (Changelog / quick share(qr code) / homepage(blog tego programisty))
+   * Setting (Force language / show location names (nazwa miasta na górze))
+   
+   
