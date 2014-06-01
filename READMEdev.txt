@@ -22,7 +22,7 @@ Investigejszyn / obczajki
   - rozwiązania interfejsu graficznego
   - zapamiętywanie wyborów użytkownika
 
-2. Android market 
+2. Android market
   - procedura rozpoczęcia aplikacji
     - koszt
     - czas
@@ -45,12 +45,12 @@ Investigejszyn / obczajki
   - url
   - liczba map szczegółowych
   - WAM
-  - potrzebny transfer 
+  - potrzebny transfer
     - meteogramy
     - mapy szczegółowe
   - jak często nowe prognozy
 
-5. Inne
+OK 5. Inne
   - github
   - issue tracker light
 
