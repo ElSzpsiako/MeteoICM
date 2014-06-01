@@ -95,3 +95,44 @@ Search: Meteo ICM
    
    
    
+--------------------------------------------------------
+4. Meteo
+   v. 1.6.2
+   [PIXEL CARROT]
+   100 000+ downloads
+   Dec 26, 2010
+   619 g+
+   Size: 154kB
+   
+   1327 comments
+   5 stars 994
+   4 stars 184
+   3 stars  49
+   2 stars  28
+   1 star   72
+   
+   Permissions: 
+   Network communication:
+    -Full Internet access   
+   Your location:
+    -Coarse (network-based) location, fine (GPS) location
+   
+   Flow:
+   1. przy pierwszym uruchomieniu
+      (no favorites,
+       select city,
+       show map,
+       weathermap comment -> meteo.pl url)
+       
+   Uwagi:
+   * Select city (tylko główne miasta dostępne ~ 20)
+   * Brak reklam
+   * Dobre opisy UM / COAMPS
+   
+   Opcje:
+   * Remove favorites
+   * Changelog
+   * Contact author -> mail
+   * meteogramy -> Coamps / UM / +Legenda 
+   
+   
