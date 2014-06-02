@@ -41,9 +41,19 @@ Search: Meteo ICM
    * Location (Gwiazdki -> do ulubionych) (+ quick filter z klawiatury)
    * Favourites (ulubione miasta)
    * View (Plain / + Legend)
-   * About (Changelog / quick share(qr code) / homepage(blog tego programisty))
+   * About (Changelog / quick share(qr code) / homepage(blog tego programisty))   
    * Setting (Force language / show location names (nazwa miasta na górze))
 
+   Uwagi użytkowników:
+   * wykresy mogłyby być lepiej dopasowane do ekranu
+   * plusy - szybciej niż z przeglądarki, minusy - brak wyboru um/coamps, znika ostatnio pobrany wykres przy braku połączenia, brak dostępu do legendy,
+   * pokazuje tylko czarny ekran i reklamę
+   * image quality terrible
+   * przydałby się UM / COAMPS
+   * działa na nexus one / słabe usability
+   * 
+   
+   
 --------------------------------------------------------
 2. Meteo ICM
    [SOFTANO]
@@ -170,6 +180,10 @@ Search: Meteo ICM
    * Contact author -> mail
    * meteogramy -> Coamps / UM / +Legenda
 
+   Opinie użytkowników:
+   * widżet potrzebny (od razu otwierałby stronę z miastem)
+   
+   
 --------------------------------------------------------
 5. Meteo - czytnik meteo.pl
    [OL0]
