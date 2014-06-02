@@ -205,18 +205,18 @@ Search: Meteo ICM
    * wyświetlanie połączeń sieciowych
    * pełny dostęp do sieci
 
-   Uwagi:
+   Uwagi użytkowników:
    * brak reklam,
    * lekka
    * nie działa automatyczna lokalizacja
    * mogłaby to czytelniej pokazywać
    * widget - chcemy bardzo
-   * ulubione miejsca, bez ograniczeń
 
    Wady:
    * dziwna lista nazw, ale można wstukać własną
    * nie działa automatyczne wyszukiwanie lokalizacji
    * nieczytelny widget - może warto wyciąć tło i sprawdzić i udostępnić negatyw
+   * ulubione miejsca, bez ograniczeń
 --------------------------------------------------------
 
 28. UM Meteo
