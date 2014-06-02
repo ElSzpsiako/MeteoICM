@@ -44,6 +44,16 @@ Search: Meteo ICM
    * About (Changelog / quick share(qr code) / homepage(blog tego programisty))
    * Setting (Force language / show location names (nazwa miasta na górze))
 
+   Uwagi użytkowników:
+   * wykresy mogłyby być lepiej dopasowane do ekranu
+   * plusy - szybciej niż z przeglądarki, minusy - brak wyboru um/coamps, znika ostatnio pobrany wykres przy braku połączenia, brak dostępu do legendy,
+   * pokazuje tylko czarny ekran i reklamę
+   * image quality terrible
+   * przydałby się UM / COAMPS
+   * działa na nexus one / słabe usability
+   *
+
+
 --------------------------------------------------------
 2. Meteo ICM
    [SOFTANO]
@@ -80,6 +90,7 @@ Search: Meteo ICM
     * Wybór modelu (UM 60h, Model Coamps 84h) (ale ktoś napisał że się nie odświeża - nie wiem co miał na myśli)
     * Legenda, ale nieczytelnie rozmieszczona
     * Chowanie belki (godzina, status baterii) androidowej
+
 
 --------------------------------------------------------
 3. ICM Meteo
@@ -170,6 +181,10 @@ Search: Meteo ICM
    * Contact author -> mail
    * meteogramy -> Coamps / UM / +Legenda
 
+   Opinie użytkowników:
+   * widżet potrzebny (od razu otwierałby stronę z miastem)
+
+
 --------------------------------------------------------
 5. Meteo - czytnik meteo.pl
    [OL0]
@@ -195,11 +210,45 @@ Search: Meteo ICM
    * lekka
    * nie działa automatyczna lokalizacja
    * mogłaby to czytelniej pokazywać
-   * widget - chemy bardzo
+   * widget - chcemy bardzo
    * ulubione miejsca, bez ograniczeń
 
    Wady:
    * dziwna lista nazw, ale można wstukać własną
    * nie działa automatyczne wyszukiwanie lokalizacji
    * nieczytelny widget - może warto wyciąć tło i sprawdzić i udostępnić negatyw
- --------------------------------------------------------
+--------------------------------------------------------
+
+28. UM Meteo
+    [Tomasz Adamowicz]
+     v. 1.0
+    10 000+ downloads
+    Feb 9, 2012
+    87 g+
+    size: 182kB
+
+    74 comments
+    5 stars 49
+    4 stars 13
+    3 stars  6
+    2 stars  1
+    1 star   5
+
+    Permissions:
+    Network communication:
+    -Full internet access
+    -View network state
+
+    Flow:
+    * Przy pierwszym uruchomieniu od razu UM Meteo - Warszawa
+
+    Uwagi:
+    * Brak reklam!
+    * Bardzo prosta w obsłudze
+    * Nie zapamiętuje miast - bardzo uciążliwa przy używaniu w wielu miastach (trzeba za każdym razem wpisywać z klawiatury)
+    * Fajnie rozwiązana legenda - prosty dostęp z guzika
+
+    Opcje:
+    * Komentarz synoptyka
+    * Info (Credits + legenda)
+    * Search
