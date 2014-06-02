@@ -173,7 +173,33 @@ Search: Meteo ICM
 --------------------------------------------------------
 5. Meteo - czytnik meteo.pl
    [OL0]
+   v. 1.6.1
+   5 tys.+ downloads
+   najnowsza wersja - 1 czerwca 2014
+   Size: 1.46 MB
 
-   // TODO
+   5 stars 299
+   4 stars  66
+   3 stars   8
+   2 stars   3
+   1 star    3
 
---------------------------------------------------------
+   Uprawnienia:
+   * przybliżona lokalizacja, na podstawie sieci
+   * zdjęcia/multimedia/pliki - testowanie dostępu do chronionej pamięci, modyfikowanie i usuwanie zawartości USB
+   * wyświetlanie połączeń sieciowych
+   * pełny dostęp do sieci
+
+   Uwagi:
+   * brak reklam,
+   * lekka
+   * nie działa automatyczna lokalizacja
+   * mogłaby to czytelniej pokazywać
+   * widget - chemy bardzo
+   * ulubione miejsca, bez ograniczeń
+
+   Wady:
+   * dziwna lista nazw, ale można wstukać własną
+   * nie działa automatyczne wyszukiwanie lokalizacji
+   * nieczytelny widget - może warto wyciąć tło i sprawdzić i udostępnić negatyw
+ --------------------------------------------------------

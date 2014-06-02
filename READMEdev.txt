@@ -11,7 +11,6 @@ warstwy / miasta / visnow / icm
 guziki
 zapamietywanie danych / wyborow uzytkownika / local storage
 
-
 -----------------------------------------------------------
 Investigejszyn / obczajki
 
