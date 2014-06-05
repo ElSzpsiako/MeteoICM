@@ -2,7 +2,10 @@ Development tasks/issues:
 
 1. 
 zapamietywanie danych / wyborow uzytkownika / local storage (rozmiar, pliki?) / zapamiętywanie w widgecie
-wyswietlanie / skalowanie do ekranu / densityPixels / aliasing
+MSZ wyswietlanie / skalowanie do ekranu / densityPixels / aliasing
+      http://developer.android.com/guide/topics/resources/drawable-resource.html
+      http://developer.android.com/guide/practices/screens_support.html      
+      
 menu / intents / przejscia / linki
 
 2. 
