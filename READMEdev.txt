@@ -1,15 +1,19 @@
 Development tasks/issues:
 
-wyswietlanie / skalowanie do ekranu / densityPixels
-menu / intents / przejscia
-linki
-obrazki / preload / cache
+1. 
+zapamietywanie danych / wyborow uzytkownika / local storage (rozmiar, pliki?) / zapamiętywanie w widgecie
+wyswietlanie / skalowanie do ekranu / densityPixels / aliasing
+menu / intents / przejscia / linki
+
+2. 
+guziki
 sprawdzanie nowych danych / wget
+obrazki / preload / cache
+
+3.
 animacja / wydajnosc
 zoom / x2
 warstwy / miasta / visnow / icm
-guziki
-zapamietywanie danych / wyborow uzytkownika / local storage
 
 -----------------------------------------------------------
 Investigejszyn / obczajki
