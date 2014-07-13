@@ -25,10 +25,13 @@ public class MainActivity extends ActionBarActivity {
     private ImageView imageView;
     private WebView webView;
     private String latestMeteogramFilename = "latest_meteogram.png";
+    private int onCreateIndex = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        System.out.println("test index" + onCreateIndex++);
 
         if (isMeteogramOnLocalStorage()) {
             displayLocalMeteogram();
