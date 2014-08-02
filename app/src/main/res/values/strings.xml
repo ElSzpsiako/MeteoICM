@@ -4,5 +4,7 @@
     <string name="app_name">meteo</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="action_locations">Wybrane miejsca</string>
+    <string name="locations_label">Lokalizacje</string>
 
 </resources>

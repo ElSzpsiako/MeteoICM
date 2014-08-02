@@ -1,6 +1,7 @@
 package pl.edu.icm.meteo.android.meteo.app;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -9,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.ImageView;
+import pl.edu.icm.meteo.android.meteo.app.location.LocationsActivity;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -25,15 +27,13 @@ public class MainActivity extends ActionBarActivity {
     private ImageView imageView;
     private WebView webView;
     private String latestMeteogramFilename = "latest_meteogram.png";
-    private int onCreateIndex = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+//        getSupportActionBar().hide();
 
-        System.out.println("test index" + onCreateIndex++);
-
-        if (isMeteogramOnLocalStorage()) {
+        if (isNonEmptyMeteogramOnLocalStorage()) {
             displayLocalMeteogram();
             makeImageViewGone();
         } else {
@@ -42,8 +42,9 @@ public class MainActivity extends ActionBarActivity {
         new DownloadLatestMeteogramTask().execute();
     }
 
-    private boolean isMeteogramOnLocalStorage() {
-        return new File(getFilesDir() + "/" + latestMeteogramFilename).exists();
+    private boolean isNonEmptyMeteogramOnLocalStorage() {
+        File file =  new File(getFilesDir() + "/" + latestMeteogramFilename);
+        return file.exists() && file.length() > 0;
     }
 
     private void displayLocalMeteogram() {
@@ -72,14 +73,16 @@ public class MainActivity extends ActionBarActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
-        return true;
+        return super.onCreateOptionsMenu(menu);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
+        switch (item.getItemId()) {
+            case R.id.action_locations:
+                startActivity(new Intent(this, LocationsActivity.class));
+            default:
+                System.out.println("Default");
         }
         return super.onOptionsItemSelected(item);
     }
@@ -128,7 +131,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
     private String getLatestMeteogramFilename() {
-        int fileNum = 12 + new Random().nextInt(20) * 3;
+        int fileNum = 12 + new Random().nextInt(16) * 3;
         return "http://tdl.home.pl/meteoandroid/maps/cropmore/temperatura/0" + fileNum + ".png";
     }
 }
