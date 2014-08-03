@@ -17,6 +17,10 @@ public class LocationsSingleton {
         locations.add(new Location(3, "Kraków"));
         locations.add(new Location(2, "Warszawa"));
         locations.add(new Location(1, "Malbork"));
+        locations.add(new Location(4, "Bielsko-Biała"));
+        locations.add(new Location(5, "Świebodzin"));
+        locations.add(new Location(6, "Szczecin"));
+        locations.add(new Location(7, "Suwałki"));
     }
 
     public static List<Location> getLocations() {

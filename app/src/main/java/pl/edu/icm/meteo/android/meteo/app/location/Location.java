@@ -1,5 +1,8 @@
 package pl.edu.icm.meteo.android.meteo.app.location;
 
+import java.text.Collator;
+import java.util.Locale;
+
 public class Location implements Comparable<Location> {
     Integer id;
     String name;
@@ -12,6 +15,8 @@ public class Location implements Comparable<Location> {
     //TODO - Polish letters
     @Override
     public int compareTo(Location another) {
-        return name.compareToIgnoreCase(another.name);
+        Collator plCollator = Collator.getInstance(new Locale("pl", "PL"));
+        return plCollator.compare(name, another.name);
+//        return name.compareToIgnoreCase(another.name);
     }
 }
