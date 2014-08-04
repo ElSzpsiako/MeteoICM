@@ -12,11 +12,9 @@ public class Location implements Comparable<Location> {
         this.name = name;
     }
 
-    //TODO - Polish letters
     @Override
     public int compareTo(Location another) {
         Collator plCollator = Collator.getInstance(new Locale("pl", "PL"));
         return plCollator.compare(name, another.name);
-//        return name.compareToIgnoreCase(another.name);
     }
 }

@@ -4,11 +4,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class LocationsSingleton {
-    private static LocationsSingleton instance;
+public class LocationsRepository {
     private static List<Location> locations;
 
-    private LocationsSingleton() {
+    public LocationsRepository() {
         initLocations();
     }
 
@@ -23,18 +22,7 @@ public class LocationsSingleton {
         locations.add(new Location(7, "Suwałki"));
     }
 
-    public static List<Location> getLocations() {
-        if (instance == null)
-            instance = new LocationsSingleton();
-        return locations;
-    }
-
     public static List<Location> locationsSortedByName() {
-        return sortLocationsByName(getLocations());
-    }
-
-
-    private static List<Location> sortLocationsByName(List<Location> locations) {
         Collections.sort(locations);
         return locations;
     }
