@@ -18,9 +18,9 @@ public class FavouriteLocationsAdapter extends ArrayAdapter<Location> {
     private FavouriteLocationsAdapterDelegate favouriteLocationsAdapterDelegate;
 
     public static interface FavouriteLocationsAdapterDelegate {
-        void selectFavouriteItem(Location location);
+        void selectFavouriteLocation(Location location);
 
-        void removeFavouriteItemFromBookmarks(Location location);
+        void removeFavouriteLocation(Location location);
     }
 
     public FavouriteLocationsAdapter(Context context, List<Location> objects) {
@@ -49,7 +49,7 @@ public class FavouriteLocationsAdapter extends ArrayAdapter<Location> {
             @Override
             public void onClick(View v) {
                 if (favouriteLocationsAdapterDelegate != null)
-                    favouriteLocationsAdapterDelegate.selectFavouriteItem(location);
+                    favouriteLocationsAdapterDelegate.selectFavouriteLocation(location);
             }
         });
     }
@@ -62,7 +62,7 @@ public class FavouriteLocationsAdapter extends ArrayAdapter<Location> {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (favouriteLocationsAdapterDelegate != null) {
                     if (!isChecked)
-                        favouriteLocationsAdapterDelegate.removeFavouriteItemFromBookmarks(location);
+                        favouriteLocationsAdapterDelegate.removeFavouriteLocation(location);
                 }
             }
         });

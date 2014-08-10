@@ -49,34 +49,37 @@ public class LocationsActivity extends ActionBarActivity implements LocationsAda
     }
 
     @Override
-    public void selectItem(Location location) {
+    public void selectLocation(Location location) {
         System.out.println("ALL LOCATIONS - active location =========== " + location.name);
     }
 
     @Override
-    public void bookmarkItem(Location location) {
+    public void bookmarkLocation(Location location) {
         location.setIsBookmarked(true);
         locationsRepository.addFavouriteLocation(location);
         favouriteLocationsAdapter.notifyDataSetChanged();
     }
 
     @Override
-    public void removeItemFromBookmarks(Location location) {
-        location.setIsBookmarked(false);
-        locationsRepository.removeFavouriteLocation(location);
+    public void removeLocationsFromBookmarks(Location location) {
+        removeLocation(location);
         favouriteLocationsAdapter.notifyDataSetChanged();
     }
 
     @Override
-    public void selectFavouriteItem(Location location) {
+    public void selectFavouriteLocation(Location location) {
         System.out.println("FAVOURITE LOCATIONS - active location =========== " + location.name);
     }
 
     @Override
-    public void removeFavouriteItemFromBookmarks(Location location) {
+    public void removeFavouriteLocation(Location location) {
+        removeLocation(location);
+        locationsAdapter.notifyDataSetChanged();
+    }
+
+    private void removeLocation(Location location) {
         location.setIsBookmarked(false);
         locationsRepository.removeFavouriteLocation(location);
-        locationsAdapter.notifyDataSetChanged();
     }
 
 }

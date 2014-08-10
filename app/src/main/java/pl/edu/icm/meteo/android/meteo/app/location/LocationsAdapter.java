@@ -18,11 +18,11 @@ public class LocationsAdapter extends ArrayAdapter<Location> {
     private LocationsAdapterDelegate locationsAdapterDelegate;
 
     public static interface LocationsAdapterDelegate {
-        void selectItem(Location location);
+        void selectLocation(Location location);
 
-        void bookmarkItem(Location location);
+        void bookmarkLocation(Location location);
 
-        void removeItemFromBookmarks(Location location);
+        void removeLocationsFromBookmarks(Location location);
     }
 
     public LocationsAdapter(Context context, List<Location> objects) {
@@ -51,7 +51,7 @@ public class LocationsAdapter extends ArrayAdapter<Location> {
             @Override
             public void onClick(View v) {
                 if (locationsAdapterDelegate != null)
-                    locationsAdapterDelegate.selectItem(location);
+                    locationsAdapterDelegate.selectLocation(location);
             }
         });
     }
@@ -64,9 +64,9 @@ public class LocationsAdapter extends ArrayAdapter<Location> {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (locationsAdapterDelegate != null) {
                     if (isChecked)
-                        locationsAdapterDelegate.bookmarkItem(location);
+                        locationsAdapterDelegate.bookmarkLocation(location);
                     else
-                        locationsAdapterDelegate.removeItemFromBookmarks(location);
+                        locationsAdapterDelegate.removeLocationsFromBookmarks(location);
                 }
             }
         });
