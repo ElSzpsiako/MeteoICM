@@ -5,25 +5,51 @@ import java.util.Collections;
 import java.util.List;
 
 public class LocationsRepository {
-    private static List<Location> locations;
+    private List<Location> locations;
+    private List<Location> favouriteLocations;
+
 
     public LocationsRepository() {
         initLocations();
+        initFavouriteLocations();
     }
 
     private void initLocations() {
         locations = new ArrayList<Location>();
-        locations.add(new Location(3, "Kraków"));
-        locations.add(new Location(2, "Warszawa"));
-        locations.add(new Location(1, "Malbork"));
-        locations.add(new Location(4, "Bielsko-Biała"));
-        locations.add(new Location(5, "Świebodzin"));
-        locations.add(new Location(6, "Szczecin"));
-        locations.add(new Location(7, "Suwałki"));
+        locations.add(new Location("Kraków"));
+        locations.add(new Location("Warszawa"));
+        locations.add(new Location("Malbork"));
+        locations.add(new Location("Bielsko-Biała"));
+        locations.add(new Location("Świebodzin"));
+        locations.add(new Location("Szczecin"));
+        locations.add(new Location("Suwałki"));
+        locations.add(new Location("Zielona Góra"));
+        locations.add(new Location("Katowice"));
+        locations.add(new Location("Sfornegacie"));
+        locations.add(new Location("Psia Wólka"));
+        locations.add(new Location("Koziegłowy"));
     }
 
-    public static List<Location> locationsSortedByName() {
+    private void initFavouriteLocations() {
+        favouriteLocations = new ArrayList<Location>();
+    }
+
+    public List<Location> locationsSortedByName() {
         Collections.sort(locations);
         return locations;
+    }
+
+    public List<Location> favouriteLocations() {
+        Collections.sort(favouriteLocations);
+        return favouriteLocations;
+    }
+
+    public void addFavouriteLocation(Location location) {
+        favouriteLocations.add(location);
+        Collections.sort(favouriteLocations);
+    }
+
+    public void removeFavouriteLocation(Location location) {
+        favouriteLocations.remove(location);
     }
 }

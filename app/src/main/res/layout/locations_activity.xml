@@ -1,13 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
+    <TextView
+            android:id="@+id/line_over_favourite_locations"
+            android:text="@string/favourite_locations"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff41d405" />
+
+    <ListView
+            android:id="@+id/favourite_locations_list_view"
+            android:layout_below="@+id/line_over_favourite_locations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:choiceMode="multipleChoice"/>
+
+    <TextView
+            android:id="@+id/line_over_all_locations"
+            android:text="@string/all_locations"
+            android:layout_below="@+id/favourite_locations_list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff41d405" />
+
     <ListView
             android:id="@+id/locations_list_view"
+            android:layout_below="@+id/line_over_all_locations"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:choiceMode="multipleChoice"/>
-</LinearLayout>
+</RelativeLayout>

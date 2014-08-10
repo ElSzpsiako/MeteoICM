@@ -6,5 +6,7 @@
     <string name="action_settings">Settings</string>
     <string name="action_locations">Wybrane miejsca</string>
     <string name="locations_label">Lokalizacje</string>
+    <string name="all_locations">Lista lokalizacji</string>
+    <string name="favourite_locations">Ulubione</string>
 
 </resources>

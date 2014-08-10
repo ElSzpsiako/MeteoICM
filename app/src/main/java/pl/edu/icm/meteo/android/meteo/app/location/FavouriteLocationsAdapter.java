@@ -12,26 +12,24 @@ import pl.edu.icm.meteo.android.meteo.app.R;
 
 import java.util.List;
 
-public class LocationsAdapter extends ArrayAdapter<Location> {
+public class FavouriteLocationsAdapter extends ArrayAdapter<Location> {
 
     private LayoutInflater layoutInflater;
-    private LocationsAdapterDelegate locationsAdapterDelegate;
+    private FavouriteLocationsAdapterDelegate favouriteLocationsAdapterDelegate;
 
-    public static interface LocationsAdapterDelegate {
-        void selectItem(Location location);
+    public static interface FavouriteLocationsAdapterDelegate {
+        void selectFavouriteItem(Location location);
 
-        void bookmarkItem(Location location);
-
-        void removeItemFromBookmarks(Location location);
+        void removeFavouriteItemFromBookmarks(Location location);
     }
 
-    public LocationsAdapter(Context context, List<Location> objects) {
+    public FavouriteLocationsAdapter(Context context, List<Location> objects) {
         super(context, 0, objects);
         layoutInflater = LayoutInflater.from(context);
     }
 
-    public void setDelegate(LocationsAdapterDelegate delegate) {
-        locationsAdapterDelegate = delegate;
+    public void setDelegate(FavouriteLocationsAdapterDelegate delegate) {
+        favouriteLocationsAdapterDelegate = delegate;
     }
 
     @Override
@@ -50,8 +48,8 @@ public class LocationsAdapter extends ArrayAdapter<Location> {
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (locationsAdapterDelegate != null)
-                    locationsAdapterDelegate.selectItem(location);
+                if (favouriteLocationsAdapterDelegate != null)
+                    favouriteLocationsAdapterDelegate.selectFavouriteItem(location);
             }
         });
     }
@@ -62,11 +60,9 @@ public class LocationsAdapter extends ArrayAdapter<Location> {
         checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (locationsAdapterDelegate != null) {
-                    if (isChecked)
-                        locationsAdapterDelegate.bookmarkItem(location);
-                    else
-                        locationsAdapterDelegate.removeItemFromBookmarks(location);
+                if (favouriteLocationsAdapterDelegate != null) {
+                    if (!isChecked)
+                        favouriteLocationsAdapterDelegate.removeFavouriteItemFromBookmarks(location);
                 }
             }
         });
