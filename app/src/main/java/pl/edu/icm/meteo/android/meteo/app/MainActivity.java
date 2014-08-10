@@ -31,7 +31,6 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        getSupportActionBar().hide();
 
         if (isNonEmptyMeteogramOnLocalStorage()) {
             displayLocalMeteogram();

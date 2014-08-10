@@ -1,8 +1,10 @@
 package pl.edu.icm.meteo.android.meteo.app.location;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.widget.ListView;
+import pl.edu.icm.meteo.android.meteo.app.MainActivity;
 import pl.edu.icm.meteo.android.meteo.app.MeteoApplication;
 import pl.edu.icm.meteo.android.meteo.app.R;
 
@@ -30,7 +32,7 @@ public class LocationsActivity extends ActionBarActivity implements LocationsAda
         locationsListView.setAdapter(locationsAdapter);
 
         favouriteLocationsListView = (ListView) findViewById(R.id.favourite_locations_list_view);
-        favouriteLocationsAdapter = new FavouriteLocationsAdapter(this, locationsRepository.favouriteLocations());
+        favouriteLocationsAdapter = new FavouriteLocationsAdapter(this, locationsRepository.favouriteLocationsSortedByName());
         favouriteLocationsListView.setAdapter(favouriteLocationsAdapter);
     }
 
@@ -50,7 +52,8 @@ public class LocationsActivity extends ActionBarActivity implements LocationsAda
 
     @Override
     public void selectLocation(Location location) {
-        System.out.println("ALL LOCATIONS - active location =========== " + location.name);
+        selectAcitveLocation(location);
+        System.out.println("ALL LOCATIONS - active location =========== " + locationsRepository.getActiveLocation());
     }
 
     @Override
@@ -68,7 +71,13 @@ public class LocationsActivity extends ActionBarActivity implements LocationsAda
 
     @Override
     public void selectFavouriteLocation(Location location) {
-        System.out.println("FAVOURITE LOCATIONS - active location =========== " + location.name);
+        selectAcitveLocation(location);
+        System.out.println("FAVOURITE LOCATIONS - active location =========== " + locationsRepository.getActiveLocation());
+    }
+
+    private void selectAcitveLocation(Location location) {
+        locationsRepository.setActiveLocation(location);
+        startActivity(new Intent(this, MainActivity.class));
     }
 
     @Override

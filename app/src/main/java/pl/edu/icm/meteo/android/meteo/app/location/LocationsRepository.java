@@ -7,6 +7,7 @@ import java.util.List;
 public class LocationsRepository {
     private List<Location> locations;
     private List<Location> favouriteLocations;
+    private Location activeLocation;
 
 
     public LocationsRepository() {
@@ -39,7 +40,7 @@ public class LocationsRepository {
         return locations;
     }
 
-    public List<Location> favouriteLocations() {
+    public List<Location> favouriteLocationsSortedByName() {
         Collections.sort(favouriteLocations);
         return favouriteLocations;
     }
@@ -51,5 +52,13 @@ public class LocationsRepository {
 
     public void removeFavouriteLocation(Location location) {
         favouriteLocations.remove(location);
+    }
+
+    public Location getActiveLocation() {
+        return activeLocation;
+    }
+
+    public void setActiveLocation(Location activeLocation) {
+        this.activeLocation = activeLocation;
     }
 }
